@@ -27,7 +27,7 @@
 <br/>
 <br/>
 
-## ✨ Doctor-Fish 프로젝트 소개 [Notion](https://www.notion.so/Doctor-fish-Project-9f3d1aeb38044644b760dce23112bd2a?pvs=4)
+## ✨ CareCheck 프로젝트 소개 [Notion](https://www.notion.so/Doctor-fish-Project-9f3d1aeb38044644b760dce23112bd2a?pvs=4)
 
 ## 🌟 제목
 
@@ -82,42 +82,39 @@
 
 ## 👥 팀원 소개 및 역할 분담
 
->  **팀장: 성창해**
-- 프론트 사용자 페이지 api 기능 추가
-- 프론트 관리자 페이지 api 기능 추가
-- 백엔드 연차 기능 구현
-- 백엔드 예약 기능 구현
-- 백엔드 알람 기능 구현
+>  **팀장: 한상훈**
+- 메인 메뉴(사이드바, 헤더)
+- 공지사항
+- 환자 등록 및 접수 기능
   
 <br/>
 
->  **팀원: 백승주**
--  사용자 페이지 CSS
--  관리자 페이지 CSS
--  ppt 제작
+>  **팀원: 박명환**
+-  프로젝트 설계
+- 데이터베이스 설계
+- ERD 설계 및 구현(처방, 수납)
+- 수입 통계
   
 <br/>
 
->  **팀원: 김해민**
-- 백엔드 로그인, 회원가입 기능 구현
-- 백엔드 전반적인 CRUD 기능 구현
-- 검색 기능
-- ERD 작성
+>  **팀원: 백다인**
+- 공지사항 CRUD
+- 메인 화면 구현
+- 오더 및 수가 관리 기능
   
 <br/>
 
->  **팀원: 김지현**
-- 공지사항 CRUD 기능 구현
-- 백엔드 의사 삭제 기능 구현
-- 백엔드 예약 정보 수정 기능 구현
-- 백엔드 공지사항 조회 수정 기능 구현
-- 백엔드 관리자 리뷰 단건 조회, 관리자 본인 정보 조회, 유저 리뷰 단건 조회 기능 구현
+>  **팀원: 최명준**
+- 영수증, 접수 명단 조회 기능
+- 환자 바이탈 기능
+- Figma 수정
 
 <br/>
 
->  **공동작업**
--  API명세서 작성
--  DB 테이블 구조 구성
+>  **팀원: 김영경**
+- Security 및 권한 설정
+- 관리자 기능, 결제 구현
+- PPT 작성 및 발표
 
 <br/>
 <br/>
@@ -223,13 +220,20 @@
 ## 📄 API 명세서 ERD 설계도
 ### 📄 API 명세서
 ### 사용자 관련 API
-![사용자API명세서](https://github.com/user-attachments/assets/9a890b17-efa2-4c6d-b355-582d60a920da)
-
-### 관리자 관련 API
-![관리자API명세서](https://github.com/user-attachments/assets/95dfb748-d030-4609-ade0-bddc4bdecbed)
+![AccountController](https://github.com/user-attachments/assets/ba9799a3-0662-4d1f-a600-3a5a6ec771ab)
+![UserController](https://github.com/user-attachments/assets/1c62d29c-a0e6-4273-a7f2-e176496bfc3b)
+![AuthController](https://github.com/user-attachments/assets/76acf2b1-fe90-477a-80ee-637f4e66cd89)
+![PatientController](https://github.com/user-attachments/assets/b007fe07-2eed-4678-8add-34ec3917a588)
+![AdmissionController](https://github.com/user-attachments/assets/8aaefc3c-0164-4341-bfeb-db3e14087ece)
+![NoticeController](https://github.com/user-attachments/assets/703ac857-9b2e-4009-9833-bf3197706617)
+![SummaryController](https://github.com/user-attachments/assets/55f62763-7ab9-48c1-bceb-951ef323feb5)
+![SystemSettingController&OrderController](https://github.com/user-attachments/assets/18f5ceb2-2bd7-4e26-9d26-7ae6ddcee282)
+![DiseaseController](https://github.com/user-attachments/assets/7feb1d00-0934-4171-9494-b40d73d359d4)
+![UserRoleController](https://github.com/user-attachments/assets/671228d7-7755-49ad-ba18-1eb125796b3b)
 
 ### 📐 ERD 설계도
-![ERD](https://github.com/user-attachments/assets/f8814789-2e6a-476c-8379-6f163ec62673)
+![ERD](https://github.com/user-attachments/assets/80b5896b-a43e-48bc-8e09-677205f6d33c)
+
 
 <br/>
 <br/>
@@ -250,11 +254,6 @@
 -   PR(pull request)을 오픈하면, 팀장이 코드를 확인하고 승인합니다.
 
 -   코드 리뷰 & 승인은 팀장이 일임했지만, 팀원들의 코드 스타일은 다같이 공유하며 서로 잘 이해할 수 있도록 다 같이 정리하는 시간을 가지도록 하였습니다.
-
-*   컨펌 담당
-    -   백승주 : <code>성창해</code>
-    -   김해민 : <code>성창해</code>
-    -   김지현 : <code>성창해</code>
 
 5. PR이 merge되어 close 되면 해당 이슈는 자동으로 Done상태로 변경됩니다.
 
